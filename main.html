@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Estetik</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Pomodoro Estetik</h1>
+        <div id="task-input" class="task-input">
+            <input type="text" id="task" placeholder="Masukkan tugas Anda...">
+            <button id="start-pomodoro">Mulai Pomodoro</button>
+        </div>
+
+        <div id="timer" class="timer hidden">
+            <div class="time">25:00</div>
+            <div class="controls">
+                <button id="start">Mulai</button>
+                <button id="pause" class="hidden">Jeda</button>
+                <button id="reset">Reset</button>
+            </div>
+
+            <div class="mode-buttons">
+                <button id="pomodoro" class="active">Pomodoro</button>
+                <button id="short-break">Istirahat Pendek</button>
+                <button id="long-break">Istirahat Panjang</button>
+            </div>
+
+        </div>
+        <div id="task-display" class="task-display hidden">
+            <h2>Tugas Saat Ini:</h2>
+            <p id="current-task"></p>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
